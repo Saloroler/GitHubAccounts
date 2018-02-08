@@ -1,0 +1,21 @@
+
+<table class="table table-dark">
+  <thead>
+  <tr>
+    <th scope="col">Login</th>
+    <th scope="col">ID</th>
+    <th scope="col">Link</th>
+    <th scope="col">Avatar</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th scope="row">{{this.gitHubDataService.user.login}}</th>
+    <td>{{this.gitHubDataService.user.id}}</td>
+    <td><a href="{{this.gitHubDataService.user.url}}">link</a></td>
+    <td><img src="{{this.gitHubDataService.user.avatar_url}}" alt=""></td>
+  </tr>
+  </tbody>
+</table>
+<button class="btn btn-primary" routerLink="/about">Get about</button>
+
